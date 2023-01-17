@@ -8,9 +8,6 @@ abstract class AbstractController
     {
         $view = str_replace('.', DIRECTORY_SEPARATOR, $view) . ".php";
         extract($params);
-        echo "<br>";
-        // ob_start();
         require "views/$view";
-        // return ob_get_clean();
     }
 }
