@@ -10,7 +10,6 @@ class route
     protected $expReg;
     protected $keysParams = [];
 
-    //new Route('/accueil',[$controllerHome,'index'] 'home.index')
     public function __construct($path, $callback, $name)
     {
         $this->name = $name;
