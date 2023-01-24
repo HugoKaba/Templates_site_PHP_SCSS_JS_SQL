@@ -16,8 +16,7 @@ $route = $router->match($uri);
 
 if (isset($route)) {
     $params = $route->getParams($uri);
-    $responce = $route->getCallBack();
-    $responce[0]->index();
+    $responce = $route->getCallBack()($uri);
 } else {
     $controllerError->index();
 }
