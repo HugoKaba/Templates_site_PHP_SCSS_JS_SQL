@@ -10,7 +10,6 @@ class Router
     public function __construct()
     {
         $this->root = dirname($_SERVER['PHP_SELF']);
-        var_dump($this->root);
     }
 
     public function add($path, $callback, $name)
