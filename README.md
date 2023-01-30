@@ -6,7 +6,7 @@ To create your pages, you need:
 
 - Go to the controllers file and add a file with the name of your page followed by Controller(HomeController.php)
 
--You can copy paste the contents of the pages already created and change the name of the class, in the function construct the name of the path and in dollars router create your route which leads to your page.
+- You can copy paste the contents of the pages already created and change the name of the class, in the function construct the name of the path and in dollars router create your route which leads to your page.
 Example: home page ($router->"/home",[$this,"index"],"home.index")
 if you have multiple pages for a domain create other routes and change the word index to the name of your file related to the page.
 Example: homepage admin($router->"/home-Admin",[$this,"admin"],"home.admin")
