@@ -12,8 +12,9 @@ class HomeController extends AbstractController
     {
         $this->path = "Controllers/HomeController/";
         parent::__construct($router);
-        $router->add("/", [$this, 'index'], "home.index");//add a route
-        $router->add("/accueil", [$this, 'index'], "home.index");
+        /* ($path, $callback, $name)*/
+        $router->add("/", [$this, 'index'], "home.index"); //add a route
+        $router->add("/home", [$this, 'index'], "home.index");
     }
 
     public function index()
